@@ -1,0 +1,57 @@
+<resources>
+
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_normal">14sp</dimen>
+    <dimen name="font_size_large">16sp</dimen>
+    <dimen name="font_size_xlarge">18sp</dimen>
+
+    <dimen name="space_small">5dp</dimen>
+    <dimen name="space_normal">10dp</dimen>
+    <dimen name="space_large">15dp</dimen>
+    <dimen name="space_xlarge">20dp</dimen>
+
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+
+
+    <!--  New theme dimens  -->
+
+    <dimen name="text_big">@dimen/_25ssp</dimen>
+    <dimen name="text_h1">@dimen/_18ssp</dimen>
+    <dimen name="text_h2">@dimen/_16ssp</dimen>
+    <dimen name="text_h3">@dimen/_14ssp</dimen>
+    <dimen name="text_h4">@dimen/_12ssp</dimen>
+    <dimen name="text_h5">@dimen/_10ssp</dimen>
+    <dimen name="text_h6">@dimen/_8ssp</dimen>
+
+
+    <!--Margins-->
+    <dimen name="standard_margin_very_small">@dimen/_4sdp</dimen>
+    <dimen name="standard_margin_small">@dimen/_10sdp</dimen>
+    <dimen name="standard_margin_medium">@dimen/_15sdp</dimen>
+    <dimen name="standard_margin_medium_x">@dimen/_25sdp</dimen>
+    <dimen name="standard_margin_big">@dimen/_35sdp</dimen>
+    <dimen name="standard_margin_very_big">@dimen/_55sdp</dimen>
+    <dimen name="standard_margin_extra_big">@dimen/_75sdp</dimen>
+    <dimen name="standard_margin_above_button">@dimen/_155sdp</dimen>
+    <dimen name="lucky_spin_padding">@dimen/_30sdp</dimen>
+
+    <!--Radius-->
+    <dimen name="standard_radius_very_small">@dimen/_4sdp</dimen>
+    <dimen name="standard_radius_small">@dimen/_8sdp</dimen>
+    <dimen name="standard_radius_default">@dimen/_12sdp</dimen>
+    <dimen name="standard_radius_big">@dimen/_20sdp</dimen>
+    <dimen name="buttonCornerRadius">@dimen/_8sdp</dimen>
+    <dimen name="cornerRadius">@dimen/_25sdp</dimen>
+
+    <!--  Heights  -->
+    <dimen name="toolbar_height">@dimen/_48sdp</dimen>
+    <dimen name="input_height">@dimen/_48sdp</dimen>
+    <dimen name="tab_layout_height">@dimen/_50sdp</dimen>
+    <dimen name="rv_item_height">@dimen/_30sdp</dimen>
+
+    <!--  Elevations  -->
+    <dimen name="standard_elevation_small">@dimen/_2sdp</dimen>
+    <dimen name="standard_elevation_default">@dimen/_4sdp</dimen>
+
+</resources>

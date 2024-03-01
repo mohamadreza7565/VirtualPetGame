@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/primary</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#FFBB33</color>
+    <color name="colorPrimaryLight">#6097f6</color>
+    <color name="rate">#ff6451</color>
+    <color name="background_color">#F0F4F9</color>
+
+    <color name="white_blur">#0DFFFFFF</color>
+
+    <color name="text_primary_darke">#757575</color>
+
+    <!-- google's material design colours from
+    http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
+    <!--reds-->
+    <color name="md_red_500">#F44336</color>
+    <color name="md_red_800">#C62828</color>
+
+    <!-- pinks -->
+
+    <!-- purples -->
+
+    <!-- deep purples -->
+
+    <!-- indigo -->
+    <color name="indigo">#224685</color>
+
+    <!--blue-->
+    <color name="md_blue_200">#90CAF9</color>
+    <color name="md_blue_300">#64B5F6</color>
+    <color name="md_blue_500">#2196F3</color>
+    <color name="md_blue_700">#1976D2</color>
+    <color name="md_blue_800">#1565C0</color>
+
+    <!-- light blue-->
+
+    <!-- cyan -->
+
+    <!-- teal -->
+
+    <!-- green -->
+    <color name="md_green_500">#4CAF50</color>
+    <color name="md_green_700">#388E3C</color>
+    <color name="md_green_800">#2E7D32</color>
+
+    <!--light green-->
+
+    <!-- lime-->
+
+    <!--yellow -->
+
+    <!--amber-->
+    <color name="md_amber_900">#FF6F00</color>
+
+    <!--orange-->
+    <color name="extra_light_orange">#FFF9E3</color>
+    <color name="burnt_orange">#E85D03</color>
+
+    <!--deep orange-->
+
+    <!--brown -->
+
+    <!--grey-->
+    <color name="md_grey_100">#F5F5F5</color>
+    <color name="md_grey_200">#EEEEEE</color>
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_grey_400">#BDBDBD</color>
+    <color name="md_grey_500">#9E9E9E</color>
+
+    <color name="md_grey_700">#616161</color>
+    <color name="md_grey_800">#424242</color>
+    <color name="md_black_1000">#000000</color>
+    <color name="md_white_1000">#ffffff</color>
+
+    <!--blue grey-->
+
+    <color name="White">#ffffff</color>
+    <color name="bg_blur">#99F1F1F1</color>
+    <color name="Black">#333343</color>
+    <color name="Black_text">#121212</color>
+    <color name="black_trans">#8b000000</color>
+
+
+    <!-- New theme colors -->
+    <color name="primary">#3874DE</color>
+    <color name="primary_light_1">#6090E5</color>
+    <color name="primary_light_2">#88ACEB</color>
+    <color name="primary_light_3">#AFC7F2</color>
+    <color name="primary_light_4">#D7E3F8</color>
+    <color name="start_gradient_primary">#AFC7F2</color>
+    <color name="end_gradient_primary">#FDEFE6</color>
+    <color name="green">#17AD80</color>
+    <color name="transparent_green">#8017AD80</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333343</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="stroke_disable_badge">#AFB4C6</color>
+    <color name="fill_disable_badge">#EBF1FE</color>
+
+    <color name="stroke_enable_badge">#E7E2F6</color>
+    <color name="fill_enable_badge">#E0D7FB</color>
+
+    <color name="red">#E73625</color>
+    <color name="dark_red">#DE3838</color>
+
+    <color name="blue">#4E62D2</color>
+    <color name="black_blue">#374957</color>
+
+
+    <color name="grey_10">#E9EDF3</color>
+    <color name="grey_9">#EBE7FC</color>
+    <color name="grey_8">#FEF9F3</color>
+    <color name="grey_7">#F3F3F3</color>
+    <color name="grey_6">#F7F7F7</color>
+    <color name="grey_5">#505050</color>
+    <color name="grey_4">#79747E</color>
+    <color name="grey_3">#6C757D</color>
+    <color name="grey_2">#C4C4C4</color>
+    <color name="grey_1">#E9ECEF</color>
+
+    <color name="enable_video_step">@color/colorPrimary</color>
+    <color name="disable_video_step">#AEAEAE</color>
+
+    <color name="blue_pale">#E4F2E5</color>
+
+    <color name="pink">#7E1537</color>
+
+    <color name="brown">#F99746</color>
+
+    <color name="mustard">#FFBB33</color>
+
+    <color name="lilac">#F8ECD7</color>
+
+</resources>

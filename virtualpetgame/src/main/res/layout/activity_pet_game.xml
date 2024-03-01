@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glCenterVerticalScreen"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glCenterHorizontalScreen"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_character_wallpaper_2" />
+
+    <View
+        android:id="@+id/vTopShadow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#76a89d"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/clUserFandogh"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvFoodProgress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/standard_margin_small"
+        app:cardCornerRadius="@dimen/standard_radius_small"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/vTopShadow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/vTopShadow"
+        app:layout_constraintTop_toTopOf="@+id/vTopShadow"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/foodProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutDescription="@xml/activity_pet_game_xml_foodprogress_scene">
+
+            <View
+                android:id="@+id/vFoodColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/ivFoodProgress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_base_food" />
+
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvToolbarBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/standard_margin_small"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="@dimen/standard_radius_small"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vTopShadow"
+        app:layout_constraintRight_toRightOf="@+id/vTopShadow"
+        app:layout_constraintTop_toTopOf="@+id/vTopShadow">
+
+        <ImageView
+            android:id="@+id/ivToolbarBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/_8sdp"
+            android:scaleType="centerInside"
+            android:tint="@color/black"
+            app:srcCompat="@drawable/ic_back" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <View
+        android:id="@+id/vBottomShadow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#67b5cc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:0.6" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbNext"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="@dimen/standard_margin_medium"
+        android:rotation="90"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/ic_expand_less"
+        app:iconGravity="textEnd"
+        app:iconSize="50dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/ivFood"
+        app:layout_constraintTop_toTopOf="@+id/ivFood"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+
+    <LinearLayout
+        android:id="@+id/btnHazelNutFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvFoodFandoghAmount"
+            style="@style/BoldTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:text=" * 2 "
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_hazelnut"
+            android:tint="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbPre"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginRight="@dimen/standard_margin_medium"
+        android:rotation="-90"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/ic_expand_less"
+        app:iconGravity="textStart"
+        app:iconSize="50dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ivFood"
+        app:layout_constraintTop_toTopOf="@+id/ivFood"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clUserFandogh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/standard_margin_small"
+        app:layout_constraintBottom_toBottomOf="@+id/vTopShadow"
+        app:layout_constraintLeft_toLeftOf="@+id/vTopShadow"
+        app:layout_constraintTop_toTopOf="@+id/vTopShadow">
+
+        <ImageView
+            android:id="@+id/ivFandogh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top|left"
+            android:scaleX="-1"
+            android:src="@drawable/ic_happy_dorsa_fandogh"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvUserFandoghCount"
+            style="@style/BoldTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="321"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivFandogh"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFandogh" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/ic_pluse"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivHelp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/standard_margin_small"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="@id/clUserFandogh"
+        app:layout_constraintLeft_toRightOf="@id/clUserFandogh"
+        app:layout_constraintTop_toTopOf="@id/clUserFandogh"
+        app:srcCompat="@drawable/ic_pet_help" />
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_character_window"
+        app:layout_constraintBottom_toTopOf="@+id/glCenterVerticalScreen"
+        app:layout_constraintDimensionRatio="2:1.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/glCenterHorizontalScreen"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFlower"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_character_flower"
+        app:layout_constraintBottom_toTopOf="@+id/glCenterVerticalScreen"
+        app:layout_constraintDimensionRatio="1.5:1"
+        app:layout_constraintLeft_toRightOf="@+id/glCenterHorizontalScreen"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/bg_character_library"
+        app:layout_constraintDimensionRatio="2:0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFlower" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_character_sofa"
+        app:layout_constraintBottom_toTopOf="@+id/vBottomShadow"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vBottomShadow" />
+
+
+    <ImageView
+        android:id="@+id/ivBed"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_character_bed"
+        app:layout_constraintBottom_toTopOf="@+id/vBottomShadow"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vBottomShadow" />
+
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/mlCharacter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutDescription="@xml/pet_body_motion_scene"
+        app:layout_constraintBottom_toTopOf="@+id/ivFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/vTopCharacter"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintLeft_toLeftOf="@+id/ivPet"
+            app:layout_constraintRight_toRightOf="@+id/ivPet"
+            app:layout_constraintTop_toTopOf="@+id/ivPet" />
+
+        <View
+            android:id="@+id/vBottomCharacter"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPet"
+            app:layout_constraintLeft_toLeftOf="@+id/ivPet"
+            app:layout_constraintRight_toRightOf="@+id/ivPet" />
+
+        <View
+            android:id="@+id/vRightCharacter"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPet"
+            app:layout_constraintRight_toRightOf="@+id/ivPet"
+            app:layout_constraintTop_toTopOf="@+id/ivPet" />
+
+        <View
+            android:id="@+id/vLeftCharacter"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPet"
+            app:layout_constraintLeft_toLeftOf="@+id/ivPet"
+            app:layout_constraintTop_toTopOf="@+id/ivPet" />
+
+        <View
+            android:id="@+id/eyeGide"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:layout_constraintTop_toTopOf="@+id/ivPet" />
+
+        <View
+            android:id="@+id/leftBodyGide"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="45dp"
+            app:layout_constraintRight_toLeftOf="@+id/ivPet" />
+
+        <View
+            android:id="@+id/rightBodyGide"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            app:layout_constraintLeft_toRightOf="@+id/ivPet" />
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/leftHandMotionLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/pet_left_hand_motion_scene"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPet"
+            app:layout_constraintLeft_toLeftOf="@+id/leftBodyGide"
+            app:layout_constraintRight_toLeftOf="@+id/rightHandMotionLayout"
+            app:layout_constraintTop_toTopOf="@+id/ivPet">
+
+
+            <View
+                android:id="@+id/vLeftHand"
+                android:layout_width="90dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/pet_left_hand"
+                android:rotation="90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:0.7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/rightHandMotionLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutDescription="@xml/pet_right_hand_motion_scene"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPet"
+            app:layout_constraintLeft_toRightOf="@+id/leftHandMotionLayout"
+            app:layout_constraintRight_toRightOf="@+id/rightBodyGide"
+            app:layout_constraintTop_toTopOf="@+id/ivPet">
+
+
+            <View
+                android:id="@+id/vRightHand"
+                android:layout_width="90dp"
+                android:layout_height="0dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/pet_right_hand"
+                android:rotation="-90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:0.7"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vSerum"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1.8"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vVerticalCenterSerum"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.46"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vHorizontalCenterSerum"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.8"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <View
+                android:id="@+id/vStandSerum"
+                android:layout_width="100dp"
+                android:layout_height="250dp"
+                android:background="@drawable/pet_stand_serum"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/pet_wire_serum"
+                android:translationX="3dp"
+                android:translationY="-6dp"
+                app:layout_constraintBottom_toTopOf="@+id/vHorizontalCenterSerum"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/vLeftStandSerum"
+                app:layout_constraintTop_toBottomOf="@+id/vBoxSerum" />
+
+
+            <View
+                android:id="@+id/vLeftStandSerum"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/vStandSerum"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vBoxSerum"
+                android:layout_width="40dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pet_box_serum"
+                android:translationY="-2dp"
+                app:layout_constraintLeft_toLeftOf="@+id/vLeftStandSerum"
+                app:layout_constraintRight_toRightOf="@+id/vLeftStandSerum"
+                app:layout_constraintTop_toTopOf="@+id/vLeftStandSerum" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/ivPet"
+            android:layout_width="220dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/standard_margin_medium"
+            android:src="@drawable/pet_only_body"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/vSerum" />
+
+        <ImageView
+            android:id="@+id/vHire"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:paddingTop="@dimen/_12sdp"
+            android:src="@drawable/pet_up_hire"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/ivPet"
+            app:layout_constraintDimensionRatio="1:1.2"
+            app:layout_constraintLeft_toLeftOf="@+id/leftBodyGide"
+            app:layout_constraintRight_toRightOf="@+id/rightBodyGide"
+            app:layout_constraintTop_toTopOf="@+id/ivPet" />
+
+        <ImageView
+            android:id="@+id/ivBandAids"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:alpha="0"
+            android:src="@drawable/ic_pet_band_aids"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPet"
+            app:layout_constraintLeft_toRightOf="@+id/openLips"
+            app:layout_constraintRight_toRightOf="@+id/ivPet"
+            app:layout_constraintTop_toTopOf="@+id/ivPet"
+            tools:alpha="1" />
+
+        <include
+            android:id="@+id/eyes"
+            layout="@layout/pet_eyes_motion_layout" />
+
+        <include
+            android:id="@+id/veryHungryEyelids"
+            layout="@layout/very_hungry_pet_eyelids_motion_layout" />
+
+        <include
+            android:id="@+id/defaultEyelids"
+            layout="@layout/default_pet_eyelids_motion_layout" />
+
+        <include
+            android:id="@+id/sikEyelids"
+            layout="@layout/sik_pet_eyelids_motion_layout" />
+
+        <include
+            android:id="@+id/smileLips"
+            layout="@layout/smile_lips_motion_layout" />
+
+        <include
+            android:id="@+id/openLips"
+            layout="@layout/open_lips_motion_layout" />
+
+        <include
+            android:id="@+id/sadLips"
+            layout="@layout/sad_lips_motion_layout" />
+
+        <View
+            android:id="@+id/vBottomLips"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintLeft_toLeftOf="@+id/openLips"
+            app:layout_constraintRight_toRightOf="@+id/openLips"
+            app:layout_constraintTop_toBottomOf="@+id/openLips" />
+
+        <ImageView
+            android:id="@+id/ivTearDrop"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:alpha="0"
+            android:src="@drawable/ic_pet_tear_drop"
+            app:layout_constraintBottom_toBottomOf="@+id/eyes"
+            app:layout_constraintLeft_toRightOf="@+id/eyes"
+            app:layout_constraintRight_toRightOf="@+id/eyes"
+            app:layout_constraintTop_toBottomOf="@+id/eyes"
+            tools:alpha="1" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <app.abnabat.virtualpetgame.view.MovablePetFoodImageView
+        android:id="@+id/ivFood"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHazelNutFood"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:src="@drawable/ic_food_1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="500" />
+
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/vSerum"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:alpha="0"
+            android:background="@drawable/pet_serum"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1.8"
+            motion:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/ivPet"
+            android:layout_width="220dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/standard_margin_medium"
+            android:src="@drawable/pet_only_body"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/vSerum"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:alpha="1"
+            android:background="@drawable/pet_serum"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1.8"
+            motion:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/ivPet"
+            android:layout_width="220dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/standard_margin_medium"
+            android:src="@drawable/pet_only_body"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintStart_toEndOf="@+id/vSerum" />
+
+    </ConstraintSet>
+</MotionScene>

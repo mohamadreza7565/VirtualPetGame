@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintLeft_toLeftOf="@+id/ivPet"
+    app:layout_constraintRight_toRightOf="@+id/ivPet"
+    app:layout_constraintTop_toBottomOf="@+id/eyes"
+    android:layout_width="35dp"
+    android:layout_marginTop="@dimen/standard_margin_very_small"
+    android:layout_height="35dp">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/sadMotionLayout"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:visibility="invisible"
+        app:layoutDescription="@xml/sad_lip_motion_scene">
+
+        <View
+            android:id="@+id/sadView"
+            android:layout_width="35dp"
+            android:layout_height="4dp"
+            android:background="@drawable/pet_sad_lip_shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+</FrameLayout>

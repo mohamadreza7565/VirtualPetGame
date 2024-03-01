@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="250" />
+
+    <ConstraintSet android:id="@+id/start">
+
+
+        <Constraint
+            android:id="@+id/right_whit_eye"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/pet_white_eye"
+            motion:layout_constraintLeft_toRightOf="@+id/vCenter"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/right_black_eye"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleY="0.65"
+            android:scaleX="0.65"
+            android:background="@drawable/pet_black_eye"
+            motion:layout_constraintBottom_toBottomOf="@+id/right_whit_eye"
+            motion:layout_constraintEnd_toEndOf="@+id/right_whit_eye"
+            motion:layout_constraintStart_toStartOf="@+id/right_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/right_whit_eye" />
+
+
+        <Constraint
+            android:id="@+id/left_whit_eye"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/pet_white_eye"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintRight_toLeftOf="@+id/vCenter"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/left_black_eye"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleY="0.65"
+            android:scaleX="0.65"
+            android:background="@drawable/pet_black_eye"
+            motion:layout_constraintBottom_toBottomOf="@+id/left_whit_eye"
+            motion:layout_constraintEnd_toEndOf="@+id/left_whit_eye"
+            motion:layout_constraintStart_toStartOf="@+id/left_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/left_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vTopRightEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toTopOf="@+id/right_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/right_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/right_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/right_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vBottomRightEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/right_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/right_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/right_whit_eye"
+            motion:layout_constraintTop_toBottomOf="@+id/right_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vRightRightEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/right_whit_eye"
+            motion:layout_constraintLeft_toRightOf="@+id/right_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/right_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/right_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vLeftRightEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/right_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/right_whit_eye"
+            motion:layout_constraintRight_toLeftOf="@+id/right_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/right_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vCenter"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/vTopLeftEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toTopOf="@+id/left_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/left_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/left_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/left_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vBottomLeftEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/left_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/left_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/left_whit_eye"
+            motion:layout_constraintTop_toBottomOf="@+id/left_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vRightLeftEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/left_whit_eye"
+            motion:layout_constraintLeft_toRightOf="@+id/left_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/left_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/left_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vLeftLeftEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/left_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/left_whit_eye"
+            motion:layout_constraintRight_toLeftOf="@+id/left_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/left_whit_eye" />
+
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+
+        <Constraint
+            android:id="@+id/right_whit_eye"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/pet_white_eye"
+            motion:layout_constraintLeft_toRightOf="@+id/vCenter"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/right_black_eye"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleY="0.75"
+            android:scaleX="0.75"
+            android:background="@drawable/pet_black_eye"
+            motion:layout_constraintBottom_toBottomOf="@+id/right_whit_eye"
+            motion:layout_constraintEnd_toEndOf="@+id/right_whit_eye"
+            motion:layout_constraintStart_toStartOf="@+id/right_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/right_whit_eye" />
+
+
+        <Constraint
+            android:id="@+id/left_whit_eye"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/pet_white_eye"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintRight_toLeftOf="@+id/vCenter"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/left_black_eye"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleY="0.75"
+            android:scaleX="0.75"
+            android:background="@drawable/pet_black_eye"
+            motion:layout_constraintBottom_toBottomOf="@+id/left_whit_eye"
+            motion:layout_constraintEnd_toEndOf="@+id/left_whit_eye"
+            motion:layout_constraintStart_toStartOf="@+id/left_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/left_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vTopRightEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toTopOf="@+id/right_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/right_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/right_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/right_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vBottomRightEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/right_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/right_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/right_whit_eye"
+            motion:layout_constraintTop_toBottomOf="@+id/right_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vRightRightEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/right_whit_eye"
+            motion:layout_constraintLeft_toRightOf="@+id/right_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/right_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/right_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vLeftRightEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/right_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/right_whit_eye"
+            motion:layout_constraintRight_toLeftOf="@+id/right_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/right_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vCenter"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/vTopLeftEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toTopOf="@+id/left_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/left_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/left_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/left_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vBottomLeftEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/left_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/left_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/left_whit_eye"
+            motion:layout_constraintTop_toBottomOf="@+id/left_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vRightLeftEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/left_whit_eye"
+            motion:layout_constraintLeft_toRightOf="@+id/left_whit_eye"
+            motion:layout_constraintRight_toRightOf="@+id/left_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/left_whit_eye" />
+
+        <Constraint
+            android:id="@+id/vLeftLeftEye"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/left_whit_eye"
+            motion:layout_constraintLeft_toLeftOf="@+id/left_whit_eye"
+            motion:layout_constraintRight_toLeftOf="@+id/left_whit_eye"
+            motion:layout_constraintTop_toTopOf="@+id/left_whit_eye" />
+
+    </ConstraintSet>
+</MotionScene>

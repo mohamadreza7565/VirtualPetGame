@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    app:layout_constraintLeft_toLeftOf="@+id/ivPet"
+    android:layout_marginTop="@dimen/standard_margin_very_small"
+    app:layout_constraintRight_toRightOf="@+id/ivPet"
+    app:layout_constraintTop_toBottomOf="@+id/eyes">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/openLipsMotionLayout"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:visibility="invisible"
+        app:layoutDescription="@xml/open_lips_motion_scene">
+
+        <View
+            android:id="@+id/openLipsView"
+            android:layout_width="35dp"
+            android:layout_height="2dp"
+            android:background="@drawable/pet_open_lip_shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+</FrameLayout>
